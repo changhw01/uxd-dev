@@ -2,4 +2,4 @@
 <div class="feeds">
 	<article ng-repeat="question in questions">{{question.description}}</article>
 </div>
---> <div class="box" ng-repeat="question in questions"> <div class="boxInner"> <div> <article>{{question.description}}</article> </div> </div> </div>
+--> <div class="box" ng-repeat="question in questions"> <div class="boxInner"> <div class="question_box"> <div class="box_type">Unanswered Qestion</div> <div class="box_title">{{question.description}}</div> <!-- TODO(hwchang): Implement the behavior. --> <form role="form"> <div class="form-group"> <label class="radio"> <input type="radio" data-toggle="radio" name="optionsRadios" id="optionsRadios1" value="option1" data-radiocheck-toggle="radio" required> Yes </label> <label class="radio"> <input type="radio" data-toggle="radio" name="optionsRadios" id="optionsRadios2" value="option1" data-radiocheck-toggle="radio"> No </label> <label class="radio"> <input type="radio" data-toggle="radio" name="optionsRadios" id="optionsRadios3" value="option3" data-radiocheck-toggle="radio"> Skip </label> </div> </form> </div> </div> </div>
