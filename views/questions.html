@@ -1,1 +1,5 @@
-<div class="jumbotron"> <div class="question_container" ng-repeat="question in questions">{{question.description}} </div> </div>
+<!-- 
+<div class="feeds">
+	<article ng-repeat="question in questions">{{question.description}}</article>
+</div>
+--> <div class="box" ng-repeat="question in questions"> <div class="boxInner"> <div> <article>{{question.description}}</article> </div> </div> </div>
